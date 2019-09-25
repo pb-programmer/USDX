@@ -934,7 +934,6 @@ begin
 
       Ord('R'):
         begin
-          Randomize;
           if (Songs.SongList.Count > 0) and
              (FreeListMode) then
           begin
