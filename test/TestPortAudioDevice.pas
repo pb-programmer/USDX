@@ -314,6 +314,7 @@ begin
     writeln ('deviceInfo[', i, '].defaultHighOutputLatency: ', deviceInfo^.defaultHighOutputLatency:6:4);
     writeln ('deviceInfo[', i, '].defaultSampleRate:        ', deviceInfo^.defaultSampleRate:5:0);
     writeln;
+    readln;
   end;
   PaError := Pa_Terminate; 
 end;
@@ -520,9 +521,10 @@ begin
   //TestErrorText(); 
   //TestVersion();
   //TestApiInfo();
-  //TestDeviceInfo();
+  TestDeviceInfo();
   //TestFormatInfo();
-  TestStreams();
+  //TestStreams();
   
   writeln ('End: Test of Portaudio libs');
+  readln;
 end.

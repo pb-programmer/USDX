@@ -5,7 +5,7 @@ unit TestSQLLite;
 interface
 
 uses
-  Classes, SysUtils, fpcunit, testutils, testregistry, SQLiteTable3, unix;
+  Classes, SysUtils, fpcunit, testutils, testregistry, SQLiteTable3;
 
 type
 

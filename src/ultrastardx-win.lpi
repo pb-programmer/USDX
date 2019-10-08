@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectOptions>
-    <Version Value="9"/>
+    <Version Value="11"/>
     <PathDelim Value="\"/>
     <General>
       <Flags>
@@ -22,22 +22,81 @@
       <MinorVersionNr Value="2"/>
       <RevisionNr Value="1"/>
       <Attributes pvaDebug="True"/>
-      <StringTable ProductVersion=""/>
     </VersionInfo>
-    <BuildModes Count="1">
+    <BuildModes Count="2">
       <Item1 Name="default" Default="True"/>
+      <Item2 Name="release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="..\game\ultrastardx"/>
+          </Target>
+          <SearchPaths>
+            <OtherUnitFiles Value="base;lua;media;menu;screens;lib\dglOpenGL;lib\SDL2;lib\portaudio;lib\ffmpeg-3.1;lib\SQLite;lib\other;lib\openCV;webSDK;webSDK\encrypt;$(LazarusDir)\components\lazutils;lib\freetype;lib\bass;lib\Lua;screens\controllers;screens\views;lib\midi"/>
+            <UnitOutputDirectory Value="..\build\fpc-$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <CStyleOperator Value="False"/>
+              <AllowLabel Value="False"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Checks>
+              <IOChecks Value="True"/>
+              <RangeChecks Value="True"/>
+              <OverflowChecks Value="True"/>
+            </Checks>
+            <TargetCPU Value="i386"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <DebugInfoType Value="dsStabs"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+          </Linking>
+          <Other>
+            <Verbosity>
+              <ShowNotes Value="False"/>
+              <ShowHints Value="False"/>
+              <ShowExecInfo Value="True"/>
+            </Verbosity>
+            <WriteFPCLogo Value="False"/>
+            <ExecuteBefore>
+              <Command Value="clean.bat ..\build\fpc-$(TargetCPU)-$(TargetOS)"/>
+              <ScanForFPCMsgs Value="True"/>
+              <ScanForMakeMsgs Value="True"/>
+            </ExecuteBefore>
+            <ExecuteAfter>
+              <CompileReasons Compile="False" Build="False" Run="False"/>
+            </ExecuteAfter>
+          </Other>
+          <CompileReasons Run="False"/>
+        </CompilerOptions>
+      </Item2>
     </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
-      <IgnoreBinaries Value="False"/>
-      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
-      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
     </PublishOptions>
     <RunParams>
       <local>
-        <FormatVersion Value="1"/>
         <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
       </local>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default">
+          <local>
+            <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+          </local>
+        </Mode0>
+      </Modes>
     </RunParams>
     <RequiredPackages Count="1">
       <Item1>
@@ -539,15 +598,15 @@
         <IsPartOfProject Value="True"/>
       </Unit122>
       <Unit123>
-        <Filename Value="..\..\..\lazarus\fpc\3.0.0\source\packages\winunits-base\src\comobj.pp"/>
+        <Filename Value="F:\lazarus\fpc\3.0.0\source\packages\winunits-base\src\comobj.pp"/>
         <IsPartOfProject Value="True"/>
       </Unit123>
       <Unit124>
-        <Filename Value="..\..\..\lazarus\fpc\3.0.0\source\packages\fcl-registry\src\registry.pp"/>
+        <Filename Value="F:\lazarus\fpc\3.0.0\source\packages\fcl-registry\src\registry.pp"/>
         <IsPartOfProject Value="True"/>
       </Unit124>
       <Unit125>
-        <Filename Value="..\..\..\lazarus\components\lazutils\lazutils.pas"/>
+        <Filename Value="F:\lazarus\components\lazutils\lazutils.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="LazUtils"/>
       </Unit125>

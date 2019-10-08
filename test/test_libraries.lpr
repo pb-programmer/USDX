@@ -6,9 +6,9 @@ uses
   Classes,
   consoletestrunner,
   TestSQLLite,
-  SQLite3 in '../lib/SQLite/SQLite3.pas',
+  SQLite3 in '../src/lib/SQLite/SQLite3.pas',
 
-  SQLiteTable3 in '../lib/SQLite/SQLiteTable3.pas';
+  SQLiteTable3 in '../src/lib/SQLite/SQLiteTable3.pas';
 
 type
 
