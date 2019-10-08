@@ -104,7 +104,6 @@ var
     Item: ICollectable;
     ArraySize, I, Index: Integer;
 begin
-    Randomize;
     ArraySize := Length(ItemArray);
     for I := 0 to ArraySize - 1 do
     begin
@@ -119,7 +118,6 @@ class procedure TMiscCollectionLibrary.ShuffleList(const List: IList);
 var
     ListSize, I: Integer;
 begin
-    Randomize;
     ListSize := List.GetSize;
     for I := 0 to ListSize - 1 do
     begin

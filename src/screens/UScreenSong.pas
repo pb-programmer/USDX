@@ -1684,9 +1684,6 @@ begin
     GenerateThumbnails();
   end;
 
-  // Randomize Patch
-  Randomize;
-
   Equalizer := Tms_Equalizer.Create(AudioPlayback, Theme.Song.Equalizer);
 
   PreviewOpened := -1;

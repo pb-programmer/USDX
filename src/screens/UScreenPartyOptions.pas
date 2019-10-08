@@ -357,7 +357,6 @@ begin
   if Party.ModesAvailable then
   begin
     // modes are loaded
-    Randomize;
   end
   else
   begin // no modes found

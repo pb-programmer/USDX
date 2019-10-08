@@ -152,6 +152,9 @@ begin
     USTime := TTime.Create;
     VideoBGTimer := TRelativeTimer.Create;
 
+    // initialize PRNG for all classes to use (no 'Randomize' needed anywhere else)
+    Randomize;
+
     // Language
     Log.LogStatus('Initialize Paths', 'Initialization');
     InitializePaths;

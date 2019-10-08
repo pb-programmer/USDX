@@ -123,7 +123,6 @@ begin
   // random
   for I:= 0 to CountPlayer + 1 do
   begin
-    Randomize;
     R := Random(Length(TMP_PlayersName));
 
     PlayersName[I] := TMP_PlayersName[R];
